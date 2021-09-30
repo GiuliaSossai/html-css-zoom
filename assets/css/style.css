@@ -11,7 +11,8 @@ body {
 }
 
 .item {
-  font-size: 30px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 
@@ -43,29 +44,32 @@ footer {
   justify-content: space-between;
   padding: 0 10px;
   background-color: #232123;
+  font-size: 12px;
 }
 
-.footer-left, .footer-center, .footer-right {
-  padding: 10px 0;
-}
-
-/* footer left */
-.footer-left ul {
+footer ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
 }
 
-.footer-left ul li {
+footer ul li {
   text-align: center;
-  padding-right: 15px;
+  padding-right: 10px;
+}
+
+.footer-left, .footer-center, .footer-right {
+  padding: 10px 0;
 }
 
 /* footer center */
 .footer-center {
   min-width: 40%;
-  background-color: rgb(240, 245, 173);
+}
+
+.item:active {
+  color: #4CCB00;
 }
 
 
@@ -76,6 +80,5 @@ footer {
   justify-content: center;
   width: 100px;
   color: red;
-  font-size: 14px;
   background-color: #4A4A4A;
 }
