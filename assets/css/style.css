@@ -18,15 +18,19 @@ body {
 
 /* HEADER */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
   height: 50px;
   background-color: #000;
-  position: relative;
 }
 
 .label-container {
-  position: absolute;
-  top: 5px;
-  right: 5px;
+  margin: 5px
 }
 
 .label {
@@ -38,11 +42,38 @@ header {
 }
 
 
+/* MAIN */
+main {
+  width: 100vw;
+  min-height: 200px;
+  padding: 50px 0 80px 0;
+  background-color: #000;
+  overflow: scroll;
+}
+
+.container {
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img {
+  width: 100%;
+}
+
+
 /* FOOTER */
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
+  width: 100vw;
+  padding-left: 8px;
   background-color: #232123;
   font-size: 12px;
 }
@@ -71,7 +102,6 @@ footer ul li {
 .item:active {
   color: #4CCB00;
 }
-
 
 /* footer right */
 .footer-right {
