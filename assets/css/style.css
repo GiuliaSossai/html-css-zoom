@@ -18,23 +18,20 @@ body {
 
 /* HEADER */
 header {
-  display: flex;
-  justify-content: flex-end;
   width: 100vw;
   height: 50px;
+  text-align: right;
   background-color: #000;
 }
 
-.label-container {
-  margin: 5px
-}
-
-.label {
-  color: #fff;
+header button {
   font-size: 12px;
+  color: #fff;
   background-color: #494A4A;
   padding: 5px;
+  margin-top: 8px;
   border-radius: 5px;
+  border: none;
 }
 
 
@@ -42,26 +39,28 @@ header {
 main {
   width: 100vw;
   height: calc(100vh - 110px);
-  padding: 20px;
   background-color: #000;
   overflow: auto;
 }
 
+
 .container {
-  width: 100vw;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+  
 
 .img {
   width: 100%;
+  height: 100%;
 }
 
 .image {
   position: relative;
-  margin: 5px;
+  width: 200px;
+  height: 150px;  /* dando le dimensioni fisse al contenitore dell'immagine sono sicuro che anche se ci saranno foto leggermente diverse, saranno comuqnue forzate nella grandezza data*/
+  border: 3px solid black;
 }
 
 .tag {
@@ -98,6 +97,7 @@ footer ul li {
 
 .footer-left, .footer-center, .footer-right {
   padding: 10px 0;
+  /*flex-shrink: 0; alternativa a min-width del footer-center per non far schiacciare il footer*/
 }
 
 /* footer center */
